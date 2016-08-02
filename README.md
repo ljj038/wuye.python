@@ -1,0 +1,2 @@
+# wuye.python
+python script
