@@ -1,2 +1,2 @@
-# wuye.python
-python script
+###wuye.python#
+####python script#
