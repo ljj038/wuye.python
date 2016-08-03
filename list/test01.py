@@ -116,3 +116,24 @@ print list7;#[3, 2, 1, 100, 3]
 #排序
 list7.sort();
 print list7;#[1, 2, 3, 3, 100]
+
+
+#列表推导式
+#列表推导式为从序列中创建列表提供了一个简单的方法
+#普通的应用程序通过将一些操作应用于序列的每个成员并通过返回的元素创建列表，或者通过满足特定条件的元素创建子序列
+squares = [];
+for x in range(10):
+    squares.append(x**2);
+print squares;#[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+#采用下面的方式,可以达到同样的目的:
+squares = [i**2 for i in range(10)];
+print squares;#[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+squares = [];
+for x in range(10):
+    if(x%2 == 0):
+        squares.append(x**2);
+print squares;#[0, 4, 16, 36, 64]
+#等同于下面
+squares = [i**2 for i in range(10) if i%2==0]
+print squares;#[0, 4, 16, 36, 64]
