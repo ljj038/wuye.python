@@ -3,10 +3,13 @@
 #json encode
 import json;
 p = {220000:{220400:[220421],220800:[220821,220882,220881]}};
+#json.dumps可以输出一个json串
 j = json.dumps(p);
 print "json encode : " , j;
-#json decode
+#json.dump(f,json) 可以将json输出到文件
+json.dump(j, open('write4.txt', 'w'));
 
+#json decode
 proPreFix = "├──";
 citPreFix = "│   └──";
 araPreFix = "│   │   └──";
