@@ -1,0 +1,10 @@
+2016-08-09 20:03:10,339 - demoLogger - DEBUG - myLogger debug message
+2016-08-09 20:03:10,339 - demoLogger - INFO - myLogger info message
+2016-08-09 20:03:10,339 - demoLogger - WARNING - myLogger warning message
+2016-08-09 20:03:10,339 - demoLogger - ERROR - myLogger error message
+2016-08-09 20:03:10,339 - demoLogger - CRITICAL - myLogger critical message
+2016-08-09 20:03:46,036 - demoLogger - DEBUG - myLogger debug message
+2016-08-09 20:03:46,036 - demoLogger - INFO - myLogger info message
+2016-08-09 20:03:46,036 - demoLogger - WARNING - myLogger warning message
+2016-08-09 20:03:46,036 - demoLogger - ERROR - myLogger error message
+2016-08-09 20:03:46,036 - demoLogger - CRITICAL - myLogger critical message
