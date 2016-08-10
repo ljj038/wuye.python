@@ -10,13 +10,13 @@ python setup.py build
 python setup.py install
 # 至此就安装完成了
 ```
-3. 提示 [mysql_config: not found]
+2. 提示 [mysql_config: not found]
 
 ```php
 sudo apt-get install libmysqlclient-dev
 ls /usr/bin/mysql_config
 ```
-2. 提示 setuptools未安装
+3. 提示 setuptools未安装
 
 ```php
 wget http://pypi.python.org/packages/source/s/setuptools/setuptools-0.6c11.tar.gz
@@ -25,7 +25,7 @@ cd setuptools-0.6c11/
 python setup.py build
 python setup.py install
 ```
-3. 提示 [error: Setup script exited with error: command 'gcc' failed with exit status 1]
+4. 提示 [error: Setup script exited with error: command 'gcc' failed with exit status 1]
 
 ```php
 sudo apt-get install libmysqlclient-dev
