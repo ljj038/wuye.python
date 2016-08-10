@@ -1,0 +1,35 @@
+2016-08-10 09:42:13,311 - logerDemo - DEBUG - myLogger debug message
+2016-08-10 09:42:13,311 - logerDemo - INFO - myLogger info message
+2016-08-10 09:42:13,311 - logerDemo - WARNING - myLogger warning message
+2016-08-10 09:42:13,311 - logerDemo - ERROR - myLogger error message
+2016-08-10 09:42:13,311 - logerDemo - CRITICAL - myLogger critical message
+2016-08-10 09:45:16,891 - 192.168.10.1 - zhaoyingnan logerDemo - DEBUG - myLogger debug message
+2016-08-10 09:45:16,891 - 192.168.10.1 - zhaoyingnan logerDemo - INFO - myLogger info message
+2016-08-10 09:45:16,891 - 192.168.10.1 - zhaoyingnan logerDemo - WARNING - myLogger warning message
+2016-08-10 09:45:16,891 - 192.168.10.1 - zhaoyingnan logerDemo - ERROR - myLogger error message
+2016-08-10 09:45:16,891 - 192.168.10.1 - zhaoyingnan logerDemo - CRITICAL - myLogger critical message
+2016-08-10 09:46:05,093 - 192.168.10.1 - zhaoyingnan - logerDemo - DEBUG - myLogger debug message
+2016-08-10 09:46:05,093 - 192.168.10.1 - zhaoyingnan - logerDemo - INFO - myLogger info message
+2016-08-10 09:46:05,093 - 192.168.10.1 - zhaoyingnan - logerDemo - WARNING - myLogger warning message
+2016-08-10 09:46:05,093 - 192.168.10.1 - zhaoyingnan - logerDemo - ERROR - myLogger error message
+2016-08-10 09:46:05,093 - 192.168.10.1 - zhaoyingnan - logerDemo - CRITICAL - myLogger critical message
+2016-08-10 09:46:30,036 192.168.10.1 zhaoyingnan logerDemo DEBUG myLogger debug message
+2016-08-10 09:46:30,036 192.168.10.1 zhaoyingnan logerDemo INFO myLogger info message
+2016-08-10 09:46:30,036 192.168.10.1 zhaoyingnan logerDemo WARNING myLogger warning message
+2016-08-10 09:46:30,036 192.168.10.1 zhaoyingnan logerDemo ERROR myLogger error message
+2016-08-10 09:46:30,037 192.168.10.1 zhaoyingnan logerDemo CRITICAL myLogger critical message
+2016-08-10 09:47:06,564 192.168.10.1 zhaoyingnan loggerDemo DEBUG myLogger debug message
+2016-08-10 09:47:06,564 192.168.10.1 zhaoyingnan loggerDemo INFO myLogger info message
+2016-08-10 09:47:06,564 192.168.10.1 zhaoyingnan loggerDemo WARNING myLogger warning message
+2016-08-10 09:47:06,565 192.168.10.1 zhaoyingnan loggerDemo ERROR myLogger error message
+2016-08-10 09:47:06,565 192.168.10.1 zhaoyingnan loggerDemo CRITICAL myLogger critical message
+2016-08-10 09:47:45,573 192.168.10.1-zhaoyingnan loggerDemo DEBUG-myLogger debug message
+2016-08-10 09:47:45,573 192.168.10.1-zhaoyingnan loggerDemo INFO-myLogger info message
+2016-08-10 09:47:45,573 192.168.10.1-zhaoyingnan loggerDemo WARNING-myLogger warning message
+2016-08-10 09:47:45,573 192.168.10.1-zhaoyingnan loggerDemo ERROR-myLogger error message
+2016-08-10 09:47:45,573 192.168.10.1-zhaoyingnan loggerDemo CRITICAL-myLogger critical message
+2016-08-10 10:32:58,263 192.168.10.1-zhaoyingnan loggerDemo DEBUG-myLogger debug message
+2016-08-10 10:32:58,263 192.168.10.1-zhaoyingnan loggerDemo INFO-myLogger info message
+2016-08-10 10:32:58,263 192.168.10.1-zhaoyingnan loggerDemo WARNING-myLogger warning message
+2016-08-10 10:32:58,263 192.168.10.1-zhaoyingnan loggerDemo ERROR-myLogger error message
+2016-08-10 10:32:58,263 192.168.10.1-zhaoyingnan loggerDemo CRITICAL-myLogger critical message
