@@ -1,0 +1,20 @@
+2016-08-11 18:28:01,087 192.168.0.1-zhaoyingnan transferLogger DEBUG-checkAcctidAvailable select id from zhs_user where id = 327 limit 1
+2016-08-11 18:28:01,088 192.168.0.1-zhaoyingnan transferLogger DEBUG-checkAcctidAvailable select id from zhs_user where id = 328 limit 1
+2016-08-11 18:28:01,088 192.168.0.1-zhaoyingnan transferLogger DEBUG-checkHasEnoughMoney select * from zhs_account where acctid = 327 and money >= 500 limit 1
+2016-08-11 18:28:01,088 192.168.0.1-zhaoyingnan transferLogger ERROR-327 该用户没有足够的资金(500)
+2016-08-11 18:28:54,207 192.168.0.1-zhaoyingnan transferLogger DEBUG-checkAcctidAvailable select id from zhs_user where id = 328 limit 1
+2016-08-11 18:28:54,208 192.168.0.1-zhaoyingnan transferLogger DEBUG-checkAcctidAvailable select id from zhs_user where id = 327 limit 1
+2016-08-11 18:28:54,208 192.168.0.1-zhaoyingnan transferLogger DEBUG-checkHasEnoughMoney select * from zhs_account where acctid = 328 and money >= 500 limit 1
+2016-08-11 18:28:54,208 192.168.0.1-zhaoyingnan transferLogger DEBUG-reduceMoney update zhs_account set money=money-500 where acctid = 328
+2016-08-11 18:28:54,208 192.168.0.1-zhaoyingnan transferLogger DEBUG-reduceMoney update zhs_account set money=money+500 where acctid = 327
+2016-08-11 18:28:54,287 192.168.0.1-zhaoyingnan transferLogger INFO-328已成功向327转账500元
+2016-08-11 18:30:31,638 192.168.0.1-zhaoyingnan transferLogger DEBUG-checkAcctidAvailable select id from zhs_user where id = 328 limit 1
+2016-08-11 18:30:31,638 192.168.0.1-zhaoyingnan transferLogger DEBUG-checkAcctidAvailable select id from zhs_user where id = 327 limit 1
+2016-08-11 18:30:31,639 192.168.0.1-zhaoyingnan transferLogger DEBUG-checkHasEnoughMoney select * from zhs_account where acctid = 328 and money >= 500 limit 1
+2016-08-11 18:30:31,639 192.168.0.1-zhaoyingnan transferLogger DEBUG-reduceMoney update zhs_account set money=money-500 where acctid = 328
+2016-08-11 18:30:31,639 192.168.0.1-zhaoyingnan transferLogger DEBUG-reduceMoney update zhs_account set money=money+500 where acctid = 327
+2016-08-11 18:30:31,714 192.168.0.1-zhaoyingnan transferLogger INFO-328已成功向327转账500元
+2016-08-11 18:30:33,693 192.168.0.1-zhaoyingnan transferLogger DEBUG-checkAcctidAvailable select id from zhs_user where id = 328 limit 1
+2016-08-11 18:30:33,693 192.168.0.1-zhaoyingnan transferLogger DEBUG-checkAcctidAvailable select id from zhs_user where id = 327 limit 1
+2016-08-11 18:30:33,693 192.168.0.1-zhaoyingnan transferLogger DEBUG-checkHasEnoughMoney select * from zhs_account where acctid = 328 and money >= 500 limit 1
+2016-08-11 18:30:33,694 192.168.0.1-zhaoyingnan transferLogger ERROR-328 该用户没有足够的资金(500)
