@@ -1,3 +1,6 @@
+## Pythong mysql 操作流程
+![mysql](https://github.com/zhaoyingnan911/wuye.python/blob/master/images/python-mysql.png?raw=true)
+
 ## 对于事务的理解
 
 * 原子性:事务中包括的诸多操作要么都做，要么都不做
