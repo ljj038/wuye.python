@@ -30,3 +30,5 @@ python setup.py install
 ```php
 sudo apt-get install libmysqlclient-dev
 ```
+## Pythong mysql 操作流程
+![mysql](https://github.com/zhaoyingnan911/wuye.python/blob/master/images/python-mysql.png?raw=true)
