@@ -12,7 +12,6 @@ try:
         db='zhihuishu',
         charset='utf8',
     )
-
     # 关闭自动提交
     conn.autocommit(False)
 except MySQLdb.Error, e:
