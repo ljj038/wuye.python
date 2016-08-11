@@ -45,7 +45,7 @@ try:
     # 插入多行 end
 
     # 提交
-    conn.commit()
+    # conn.commit()
 except MySQLdb.Error, e:
     conn.rollback()
     log = "Mysql connect error %d: %s"%(e.args[0], e.args[1])
