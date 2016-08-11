@@ -3,7 +3,18 @@
 
 ## 开发时应注意
 ```php
-
+	conn = MySQLdb.Connect(...)
+    # 关闭自动提交
+    conn.autocommit(False)
+	try:
+		cursor = conn.cursor()
+		sql = '...'
+		cursor.execute(sql)
+		# 提交
+		conn.comit()
+	except MySQLdb.Error, e:
+		# log
+		conn.rollback()
 ```
 ## 对于事务的理解
 
