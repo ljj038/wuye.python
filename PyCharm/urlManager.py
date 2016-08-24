@@ -24,6 +24,8 @@ class UrlManager:
         if (len(newUrl) > 0):
             if (not self.redis.sismember(self.newUrl, newUrl) and not self.redis.sismember(self.oldUrl, newUrl)):
                 self.redis.sadd(self.newUrl, newUrl)
+            else:
+                print('the url is already exists.[%s]' % newUrl)
 
     # add muliti url
     def addMuliNewUrl(self, newList):

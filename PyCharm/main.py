@@ -3,6 +3,8 @@
 import urlManager
 import htmlLoader
 import htmlParser
+from spiderLogger import SpiderLogger
+
 
 class MainSpider:
     def __init__(self):
@@ -11,22 +13,34 @@ class MainSpider:
             self.htmlLoader = htmlLoader.HtmlLoader()
             self.htmlParser = htmlParser.HtmlParser()
         except Exception as e:
-            print e
+            SpiderLogger.log(e)
 
-    def execute(self, newUrl):
-        # print newUrl
+    def setStartUrl(self, sUrl):
+        self.startUrl = sUrl
+
+    def execute(self):
         try:
-            self.urlManager.addOneNewUrl(newUrl)
-            if(self.urlManager.hasMoreNewUrl() > 0):
-                sContent = self.htmlLoader.down(newUrl)
-                if(sContent is not None):
-                    lLink = self.htmlParser.getLinkList(newUrl=newUrl, sContent=sContent)
-                    print lLink
+            sFirstPageUrl = 'http://www.mp4ba.com?page=1'
+            sFirstPageContent = self.htmlLoader.down(sFirstPageUrl)
+            iPage = self.htmlParser.getTotalPage(sFirstPageUrl, sFirstPageContent)
+            if (iPage > 1):
+                i = 1
+                while 1:
+                    if (i > iPage):
+                        break
+
+                    sPerPageUrl = 'http://www.mp4ba.com?page=%d' % i
+                    sPerPageContent = self.htmlLoader.down(sPerPageUrl)
+                    if (sPerPageContent is not None):
+                        lLink = self.htmlParser.getLinkList(sPerPageUrl, sPerPageContent)
+                        print len(lLink)
+                    i += 1
+
         except Exception as e:
-            print(e)
+            SpiderLogger.log(e)
 
 
 if (__name__ == '__main__'):
-    rootUrl = 'http://www.mp4ba.com/'
+    rootUrl = 'http://www.mp4ba.com?page=1'
     test = MainSpider()
-    test.execute(rootUrl)
+    test.execute()

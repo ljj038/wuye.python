@@ -2,6 +2,7 @@
 # coding=utf-8
 import urllib2
 import urllib
+from spiderLogger import SpiderLogger
 
 
 class HtmlLoader:
@@ -22,10 +23,12 @@ class HtmlLoader:
             opener = urllib2.build_opener(objProxy)
             urllib2.install_opener(opener)
 
-            objResponse = opener.open(objRequest)
+            objResponse = opener.open(objRequest, timeout=10)
             iCode = objResponse.getcode()
             if (iCode == 200):
                 content = objResponse.read()
+            else:
+                SpiderLogger.log('down html code fail[%s]' % newUrl)
 
         finally:
             return content
