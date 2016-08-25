@@ -15,10 +15,7 @@ class MainSpider:
         except Exception as e:
             SpiderLogger.log(e)
 
-    def setStartUrl(self, sUrl):
-        self.startUrl = sUrl
-
-    def execute(self):
+    def fetchUrl(self):
         try:
             sFirstPageUrl = 'http://www.mp4ba.com?page=1'
             sFirstPageContent = self.htmlLoader.down(sFirstPageUrl)
@@ -33,14 +30,25 @@ class MainSpider:
                     sPerPageContent = self.htmlLoader.down(sPerPageUrl)
                     if (sPerPageContent is not None):
                         lLink = self.htmlParser.getLinkList(sPerPageUrl, sPerPageContent)
-                        print len(lLink)
+                        # self.urlManager.addMuliNewUrl(lLink)
+                        for sUrl in lLink:
+                            self.__fetchUk(sUrl)
+
                     i += 1
 
         except Exception as e:
             SpiderLogger.log(e)
 
+    def __fetchUk(self, sUrl):
+        # sUrl = 'http://www.mp4ba.com/show.php?hash=a52535b56561172cbae4ccc48af075feadc49601'
+        sContent = self.htmlLoader.down(sUrl)
+        sUkUrl, sTitle = self.htmlParser.getDownUrl(sUrl, sContent)
+        if (sUkUrl is not None and sTitle is not None):
+            self.htmlLoader.ukDown(sUkUrl, sTitle)
+
 
 if (__name__ == '__main__'):
     rootUrl = 'http://www.mp4ba.com?page=1'
     test = MainSpider()
-    test.execute()
+    test.fetchUrl()
+    # test.fetchUk()

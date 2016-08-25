@@ -38,12 +38,19 @@ class HtmlParser:
     def getDownUrl(self, newUrl, sContent):
         try:
             sUrl = None
+            sTitle = None
             soup = BeautifulSoup(markup=sContent, features='html.parser', from_encoding='utf-8')
             # <a id = "download" href = "down.php?date=1471008730&amp;hash=a52535b56561172cbae4ccc48af075feadc49601" > 点击此处下载种子 < / a >
-            objA = soup.find('a', attrs={'id': 'download'}, href=re.compile(r'down.php\w+'))
+            objA = soup.find('a', attrs={'id': 'download'}, href=re.compile(r'down.php\?\w+'))
             if (objA is not None):
-                sUrl = objA['href']
+                sUrl = urlparse.urljoin(newUrl, objA['href'])
             else:
                 SpiderLogger.log('get down url fail[%s]' % newUrl)
+
+            objTitle = soup.find('title')
+            if objTitle is not None:
+                sTitle = objTitle.get_text()
+            else:
+                SpiderLogger.log('get down title fail[%s]' % newUrl)
         finally:
-            return sUrl
+            return sUrl, sTitle

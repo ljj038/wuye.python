@@ -1,3 +1,8 @@
 2016-08-24 18:04:20,676 192.168.0.1-zhaoyingnan mp4baLogger DEBUG-local variable 'lLink' referenced before assignment
 2016-08-24 18:04:22,147 192.168.0.1-zhaoyingnan mp4baLogger DEBUG-local variable 'lLink' referenced before assignment
 2016-08-24 18:04:30,126 192.168.0.1-zhaoyingnan mp4baLogger DEBUG-local variable 'lLink' referenced before assignment
+2016-08-24 18:33:53,564 192.168.0.1-zhaoyingnan mp4baLogger DEBUG-get down url fail[http://www.mp4ba.com/show.php?hash=a52535b56561172cbae4ccc48af075feadc49601]
+2016-08-24 18:34:52,684 192.168.0.1-zhaoyingnan mp4baLogger DEBUG-get down url fail[http://www.mp4ba.com/show.php?hash=a52535b56561172cbae4ccc48af075feadc49601]
+2016-08-24 18:34:56,086 192.168.0.1-zhaoyingnan mp4baLogger DEBUG-get down url fail[http://www.mp4ba.com/show.php?hash=a52535b56561172cbae4ccc48af075feadc49601]
+2016-08-24 19:26:11,401 192.168.0.1-zhaoyingnan mp4baLogger DEBUG-timed out
+2016-08-24 19:56:24,292 192.168.0.1-zhaoyingnan mp4baLogger DEBUG-timed out
