@@ -20,7 +20,7 @@ sUTCDate = datetime.datetime.utcfromtimestamp(689829071)
 print(sUTCDate)  # 1991-11-11 03:11:11
 
 # 建立连接
-objClient = pymongo.MongoClient("114.55.104.39", 27017)
+objClient = pymongo.MongoClient("127.0.0.1", 27017)
 # 设置操作的 database
 objDB = objClient['timeline']
 
