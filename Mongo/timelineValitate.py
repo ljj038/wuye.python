@@ -39,7 +39,7 @@ dSchoolCount2 = {202038169: 114, 202038198: 4706, 202038201: 431, 202038183: 34,
                  202038173: 4, 202038168: 360, 202038148: 149, 202038218: 56}
 
 # 建立连接
-objClient = pymongo.MongoClient("114.55.137.49", 20000)
+objClient = pymongo.MongoClient("127.0.0.1", 20000)
 # 设置操作的 database
 objDB = objClient['timeline']
 for key, value in dict.iteritems(dSchoolCount2):
