@@ -30,3 +30,12 @@ python setup.py install
 ```php
 sudo apt-get install libmysqlclient-dev
 ```
+* 安装pip
+```python
+sudo mkdir pip
+cd pip/
+ls
+sudo wget https://bootstrap.pypa.io/get-pip.py
+ls
+sudo python get-pip.py
+```
