@@ -39,3 +39,15 @@ sudo wget https://bootstrap.pypa.io/get-pip.py
 ls
 sudo python get-pip.py
 ```
+
+* 安装pandas
+```python
+# To install pandas from source you need Cython,must install Cython fisrt
+sudo pip install cython
+cd /usr/local
+sudo wget https://github.com/pydata/pandas/archive/master.zip
+sudo unzip master.zip
+sudo mv pandas-master/ pandas
+cd pandas/
+sudo python setup.py install
+```
