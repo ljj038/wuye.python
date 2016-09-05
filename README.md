@@ -1,5 +1,5 @@
 ##wuye.python#
-##Python 安装 MySQLdb
+### Python 安装 MySQLdb 模块
 * [下载地址](https://pypi.python.org/pypi/MySQL-python) 选择合适的版本
 
 ```php
@@ -40,7 +40,7 @@ ls
 sudo python get-pip.py
 ```
 
-* 安装pandas
+### Python 安装 pandas 模块
 ```python
 # To install pandas from source you need Cython,must install Cython fisrt
 sudo pip install cython
