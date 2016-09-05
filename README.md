@@ -51,3 +51,40 @@ sudo mv pandas-master/ pandas
 cd pandas/
 sudo python setup.py install
 ```
+
+### Python 安装 Imaging 模块
+
+```python
+cd /usr/local
+# 安装所需要的库
+# JPEG
+wget  http://www.ijg.org/files/jpegsrc.v9b.tar.gz
+tar -xzf jpegsrc.v9b.tar.gz
+cd jpeg-9b/
+./configure && make && make test && make install
+
+# ZLIB
+wget http://zlib.net/zlib-1.2.8.tar.gz
+tar -xzf zlib-1.2.8.tar.gz
+cd zlib-1.2.8/
+./configure && make && make install
+
+# FREETYPE2
+wget http://download.savannah.gnu.org/releases/freetype/freetype-2.6.5.tar.gz
+tar -xzf freetype-2.6.5.tar.gz
+cd freetype-2.6.5/
+./configure && make && make install
+
+# LITTLECMS
+tar -xzf lcms2-2.8.tar.gz 
+cd lcms2-2.8/
+./configure && make && make install
+
+# 检查是否安装了支持的库
+cd /usr/local/Imaging-1.1.7/
+
+rm -rf /usr/local/lib/python2.7/dist-packages/PIL
+rm -rf /usr/local/lib/python2.7/dist-packages/PIL.pth
+python setup.py build
+python setup.py install
+```
