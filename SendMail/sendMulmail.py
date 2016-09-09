@@ -8,9 +8,9 @@ from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 
 sSmtpHost = "smtp.163.com"
-sLoginUser = "you_email.com"
-sLoginPass = "you_email.password"
-listReceiveUser = ['receive1@qq.com', 'receive2@qq.com']
+sLoginUser = "*****"
+sLoginPass = "*****"
+listReceiveUser = ['*****@qq.com', '*****@qq.com']
 sTitle = "你好zhaoyn"
 sContent = '<h3><a href="http://www.cnblogs.com/xiaowuyi/archive/2012/03/17/2404015.html">python发送各类邮件的主要方法</a></h3>'
 

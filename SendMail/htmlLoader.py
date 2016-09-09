@@ -15,7 +15,7 @@ class HtmlLoader:
                 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
                 'Accept-Charset': 'utf-8',
                 'Referer': 'https://www.baidu.com/?tn=92765401_hao_pg',
-                'Accept-Language': 'zh-CN,zh;q=0.8'
+                'Accept-Language': 'zh-CN,zh;q=0.8',
             }
             dictData = {}
             sData = urllib.urlencode(dictData)
@@ -34,5 +34,7 @@ class HtmlLoader:
                 if (encoding['encoding'].startswith("GB")):
                     sContent = sContent.decode("GBK")
             return sContent
+        except Exception as e:
+            print(e)
         finally:
             pass

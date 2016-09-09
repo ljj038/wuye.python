@@ -10,8 +10,8 @@ from email.mime.application import MIMEApplication
 class MyMail:
     def __init__(self):
         self.sSmtpHost = "smtp.163.com"
-        self.sLoginUser = "***@163.com"
-        self.sLoginPass = "*****"
+        self.sLoginUser = "zhao1280293909@163.com"
+        self.sLoginPass = "YINGNAN211.DI"
         self.bDebugLevel = False
 
     def setSmtpHost(self, sSmtpHost):
@@ -104,7 +104,7 @@ class MyMail:
                     "data": {"subject": len(sSubject), "content": len(sContent)}
                     }
 
-        sFromUser = "赵英楠<%s>" % self.sLoginUser  # 发件人
+        sFromUser = "wuye<%s>" % self.sLoginUser  # 发件人
 
         # html
         objMimeText = MIMEText(_text=sContent, _subtype='html', _charset='utf-8')
@@ -125,3 +125,4 @@ class MyMail:
             print(e)
         finally:
             smtp.close()
+
