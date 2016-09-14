@@ -36,6 +36,8 @@ class Main:
             if (sContent is None):
                 print "get url title is none [%s]" % sUrl
                 continue
+            sTitle = sTitle[0:sTitle.find('-')]
+            sTitle = sTitle.strip()
 
             # 发送邮件
             sSendContnt = '<h3 style="color=red;"><a href="%s">%s</a></h3>' % (sUrl, sTitle)
