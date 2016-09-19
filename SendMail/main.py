@@ -26,7 +26,7 @@ class Main:
                 continue
 
             # 获取 url 的内容
-            sContent = self.htmlLoader.urlLoad(sUrl)
+            sContent = self.htmlLoader.urlLoad(sUrl,isDebug=True, isPost=False)
             if (sContent is None):
                 print "get url content is none [%s]" % sUrl
                 continue
