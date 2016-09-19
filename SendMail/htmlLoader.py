@@ -55,3 +55,10 @@ class HtmlLoader:
             print(e)
         finally:
             pass
+
+
+if (__name__ == '__main__'):
+    sUrl = 'http://www.cnblogs.com/yingnan/p/5659966.html'
+    demo = HtmlLoader()
+    sContent = demo.urlLoad(sUrl=sUrl, isPost=False, isDebug=True)
+    print sContent
