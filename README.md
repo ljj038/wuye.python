@@ -215,3 +215,17 @@ print(re.sub(r'\sand\s', ' & ', str1, flags=re.I))  # Baked Beans & Spam
 print(re.sub(r'\d+', add, '1 2 3'))  # 2 4 6
 ```
 
+---
+
+### 3. IDE 相关
+#### PyCharm 安装 ideaVim 插件
+```python
+操作步骤：File->Settings->Plugins->Browse repositories->输入 ideaVim -> install->重启 PyCharm
+切换 vim：Tools->Vim Emulator(Ctrl+Alt+v)
+```
+---
+
+#### PyCharm 主题模式的切换
+```python
+File->Settings->Appearance->Theme->选择想要的->重启
+```
