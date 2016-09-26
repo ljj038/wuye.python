@@ -29,3 +29,4 @@ print amqpChannel.basic_publish(exchange='', routing_key=sQueueName, body=sMessa
 
 # 关闭连接
 amqpConnection.close()
+

@@ -26,3 +26,4 @@ amqpChannel.queue_declare(queue=sQueueName)
 
 amqpChannel.basic_consume(consumer_callback=callback, queue=sQueueName, no_ack=True)
 amqpChannel.start_consuming()
+
